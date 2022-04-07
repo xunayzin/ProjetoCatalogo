@@ -1,0 +1,190 @@
+:root {
+    --bg-color-main: #363636;
+    --text-color-main: #C0C0C0;
+    --nav-color-main: #B22222;
+    --bg-color-input: #272727;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    font-family: Roboto,Arial;
+}
+ul{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+body{
+    background-color: var(--bg-color-main);
+    color: var(--text-color-main);
+}
+a {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-color-main);
+  }
+  header {
+    background-color: var(--nav-color-main);
+    font-size: 1rem;
+  }
+  
+  header div {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  header div ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  header div input {
+    background: transparent ;
+    color: var(--text-color-main);
+    padding: 0.3rem;
+  }
+  
+  header li:hover {
+    color: #ADFF2F;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+
+  
+  main .card-container {
+    margin: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    max-height: 300px;
+    font-size: small;
+    box-shadow: 0 0 1em #C0C0C055
+  }
+  
+  main .card-container:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  main .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+  }
+  
+  main .card-image img {
+    width: 80%;
+  }
+  
+  main .card-title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main .btn-container {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+  
+  main .btn-container img {
+    width: 1rem;
+  }
+  
+  main .btn-container .delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  main .btn-container .edit-icon {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+  }
+  
+  main .btn-container img:hover {
+    transform: scale(2);
+  }
+  
+  div.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, 0);
+    height: 150px;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  div.modal div.modal-header {
+    background-color: #222222;
+    width: 100%;
+    padding: 0, 5rem;
+    text-align: center;
+  }
+  
+  div.modal div.modal-title {
+    color: #000;
+  }
+  
+  div.modal div.modal-footer {
+    display: flex;
+    width: 100%;
+    gap: 0.1rem;
+  }
+  
+  div.modal div.modal-footer button {
+    width: 100%;
+  }
+  
+  /* ---- Formulário ------- */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px ridge white;
+  }
+  
+  legend {
+      background-color: 	#B22222;
+      text-align: center;
+  }
+  
+  #btn-container {
+      display: flex;
+      justify-content: center;
+  }
+  
+  button {
+    background-color: #03A062;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #04623c;
+    color: #ADFF2F;
+    cursor: pointer;
+  }

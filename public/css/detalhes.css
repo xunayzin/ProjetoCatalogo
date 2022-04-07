@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    font-family: Roboto,Arial;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 0.8rem;
+}
+:root {
+    --bg-color-main: #363636;
+    --text-color-main: #C0C0C0;
+    --nav-color-main: #B22222;
+    --bg-color-input: #272727;
+  }
+  body {
+    background-color: var(--bg-color-main);
+    color: var(--text-color-main);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color-main);
+  }
+  
+  header {
+    background-color: var(--nav-color-main);
+    font-size: 1rem;
+  }
+  header div {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header div ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+  }
+  header div input {
+    background-color: var(--bg-color-input);
+    color: var(--text-color-main);
+    border-radius: 1rem;
+    padding: 0.3rem;
+  }
+  
+  header li:hover {
+    color: #ADFF2F;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  main .card-image img {
+    width: 100%;
+  }
+  main table {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  main table td, main table thead > tr > th {
+    border: 1px solid #C0C0C0;
+  }
+  main table tr:nth-child(even) {
+    background-color: #363636;
+  }
+  main h1 {
+    color: #C0C0C0;
+    font-size: xx-large;
+    
+  }
